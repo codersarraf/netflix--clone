@@ -33,9 +33,15 @@
   padding: 0.5rem;
 }
 
+
 .row_posters::-webkit-scrollbar{
   display: none;
 }
+
+img.poster,img.poster_large {
+  border-radius: 0.5rem;
+}
+
 
 .poster:hover{
   transform: scale(1.08);
