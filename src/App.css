@@ -218,12 +218,25 @@ span{
   margin-top: 2rem;
 }
 
-@media screen and (min-width:600px){
+@media (max-width:600px){
   .user_container{
     width: 80vw;
-    height: 80vh;
+    height: 60vh;
   }
   .banner{
     width: 100vw;
+  }
+  .user_input, .user_btn{
+    width: 50vw;
+    height: 2.8rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+  
+  }
+  .sign_cont{
+    display: flex;
+    flex-direction: column;
+    gap : 1rem;
+    align-items: center;
   }
 }
