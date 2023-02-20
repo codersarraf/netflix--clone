@@ -223,9 +223,6 @@ span{
     width: 80vw;
     height: 60vh;
   }
-  .banner{
-    width: 100vw;
-  }
   .user_input, .user_btn{
     width: 50vw;
     height: 2.8rem;
