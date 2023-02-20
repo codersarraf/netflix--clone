@@ -60,6 +60,7 @@
   color: white;
   object-fit: contain;
   height: 26rem;
+  
 }
 
 .banner_data{
@@ -222,5 +223,7 @@ span{
     width: 80vw;
     height: 80vh;
   }
-  
+  .banner{
+    width: 100vw;
+  }
 }
