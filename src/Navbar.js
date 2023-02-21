@@ -22,7 +22,7 @@ function Navbar() {
         // };
     },[]);
 
-    const notShow = ()=>setModal(false);
+    // const notShow = ()=>setModal(false);
 
   return (
     <>
@@ -36,9 +36,8 @@ function Navbar() {
             alt='nav_logo' onClick={()=>setModal(!modal)}  
         />
     </div>
-    {modal && <div className="user">
-      <User notShow={notShow} />
-    </div>}
+    {modal && 
+      <User setModal={setModal} />}
     </>
     
   )

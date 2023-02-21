@@ -4,6 +4,7 @@
 
 .App{
   background-color: #111;
+  position: relative;
   
 }
 /* body{
@@ -163,7 +164,7 @@ transition: all 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e6e6e6;
+  /* background-color: #e6e6e6; */
   overflow: hidden;
 }
 .user_container{
@@ -242,4 +243,17 @@ span{
     gap : 1rem;
     align-items: center;
   }
+}
+
+
+/* modal css */
+
+#modals{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
