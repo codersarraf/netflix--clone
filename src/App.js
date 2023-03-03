@@ -10,7 +10,7 @@ import Notsigned from "./Notsigned";
 
 
 function App() {
-  let userDetail = JSON.parse(localStorage.getItem("userDetails"));
+  let userDetail = JSON.parse(localStorage.getItem("userDetails"))
   
   return (
     <div className="App">
