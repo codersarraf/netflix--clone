@@ -6,6 +6,8 @@ function Navbar() {
     const[show,setShow] = useState(false);
     const[modal, setModal]=useState(false);
 
+    
+
     useEffect(()=>{
         // for showing navbar dark background only after scroll > 100
         window.addEventListener("scroll",()=>{

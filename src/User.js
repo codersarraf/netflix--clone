@@ -38,7 +38,7 @@ console.log(user);
           <button className='user_btn' onClick={userLogin} type={'submit'} >Sign In</button>
           <div className='sign_cont'> 
               <div className='signup'>New here? <span><button onClick={()=>setSignup(true)}>Sign up now</button></span></div>
-              <button className='close' onClick={setModal(false)}>close</button>
+              <button className='close' onClick={()=>setModal(false)}>close</button>
           </div>
           <div className='thankyou'>
           ❤️❤️...Thank You For Joining Netflix...❤️❤️
