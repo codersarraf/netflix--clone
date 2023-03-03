@@ -267,7 +267,8 @@ span{
 
 /* not signed */
 #notSigned{
-  background-image: url("F:\webpage project\netflix-clone\netflix-clone\src\image\netflixLP.jpg");
+  /* background-image: url("F:\webpage project\netflix-clone\netflix-clone\src\image\netflixLP.jpg"); */
+  background-color: #000;
   background-repeat: no-repeat;
   color: #fff;
   width: 100vw;
