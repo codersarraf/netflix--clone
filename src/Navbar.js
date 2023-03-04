@@ -8,23 +8,23 @@ function Navbar() {
 
     
 
-    useEffect(()=>{
-        // for showing navbar dark background only after scroll > 100
-        window.addEventListener("scroll",()=>{
-            if(window.scrollY > 80){
-                setShow(true);
-            }
-            else{
-                setShow(false);
-            }
+    // useEffect(()=>{
+    //     // for showing navbar dark background only after scroll > 100
+    //     window.addEventListener("scroll",()=>{
+    //         if(window.scrollY > 80){
+    //             setShow(true);
+    //         }
+    //         else{
+    //             setShow(false);
+    //         }
             
-        });
-        // return ()=>{
-        //     window.removeEventListener("scroll");
-        // };
-    },[]);
+    //     });
+    //     // return ()=>{
+    //     //     window.removeEventListener("scroll");
+    //     // };
+    // },[]);
 
-    // const notShow = ()=>setModal(false);
+    // // const notShow = ()=>setModal(false);
 
   return (
     <>

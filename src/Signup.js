@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import netflix_Name from "./image/netflix_Name.jpg"
 
 function Signup({setSignup, setModal}) {
   const [newUser, setNewUser]= useState({
@@ -29,7 +30,7 @@ function Signup({setSignup, setModal}) {
   return (
     <div className='user'>
       <form className='user_container'>
-          <h1 className='user_heading'>Sign Up Now...</h1>
+          <img src={netflix_Name} className='name_logo' />
           <div ><input name='email' className='user_input' type={'text'} onChange={(e)=>setNewUser({...newUser, [e.target.name] : e.target.value})} required placeholder="Enter your email"/></div>
           <div ><input name='number' className='user_input' type={'text'} onChange={(e)=>setNewUser({...newUser, [e.target.name]: e.target.value})} required placeholder="Enter Your phone number"/></div>
           <div ><input name='username' className='user_input' type={'text'} onChange={(e)=>setNewUser({...newUser, [e.target.name]: e.target.value})} required placeholder="UserName"/></div>

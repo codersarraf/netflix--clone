@@ -5,11 +5,9 @@
 .App{
   background-color: #111;
   /* position: relative; */
-  
-}
-/* body{
   overflow: hidden;
-} */
+}
+
 
 /* row css */
 
@@ -138,8 +136,9 @@ img.poster,img.poster_large {
 transition-timing-function: ease-in;
 transition: all 0.5s;
 }
-.nav_dark{
-  background-color:#111 ;
+/* nav_dark */
+.nav{
+  background-color:#11111162 ;
 }
 
 .nav_logo{
@@ -170,7 +169,7 @@ transition: all 0.5s;
 .user_container{
   background-color: #111111e3;
   width: 30vw;
-  height:70vh;
+  height:80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,6 +196,11 @@ transition: all 0.5s;
   font-size: 1rem;
 }
 
+.name_logo{
+  width: 11.5rem;
+  height: auto;
+}
+
 ::placeholder{
   color: #fff;
   opacity: 0.8;
@@ -217,12 +221,15 @@ transition: all 0.5s;
   margin-top: 1rem;
 }
 span{
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .close{
   margin-right: 1rem;
   width: 5rem;
+} 
+.close_btn{
+  margin-top: 1rem;
 }
 
 .thankyou{
@@ -230,25 +237,6 @@ span{
   margin-top: 2rem;
 }
 
-@media (max-width:1020px){
-  .user_container{
-    width: 60vw;
-    height: 70vh;
-  }
-  .user_input, .user_btn{
-    width: 50vw;
-    height: 2.8rem;
-    border-radius: 0.4rem;
-    margin-top: 1rem;
-  
-  }
-  .sign_cont{
-    display: flex;
-    flex-direction: column;
-    gap : 3.5rem;
-    align-items: center;
-  }
-}
 
 
 /* modal css */
@@ -267,19 +255,36 @@ span{
 
 /* not signed */
 #notSigned{
-  /* background-image: url("https://preview.redd.it/zjgs096khv591.jpg?width=960&crop=smart&auto=webp&v=enabled&s=244d3c79636091b7580277bc503a4f2e0bf6e3d6"); */
-  background-color: #000;
-  background-repeat: no-repeat;
+  background-image: url("F:\webpage project\netflix-clone\netflix-clone\src\image\netflix.jpg");
   color: #fff;
   width: 100vw;
   height:100vh;
   /* position: relative; */
-  background-size: 100vw;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  filter:brightness(70%);
+  /* filter:brightness(80%); */
+  animation: zoom-in-zoom-out 10s linear infinite;
+  /* transition: transform 0.5s linear; */
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  } 
+}
+
+.name_logo_big{
+  width: 38vw;
+  height: auto;
+  background-color: #0000006f;
 }
 
 .freeWatchContainer{
@@ -289,17 +294,56 @@ span{
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  filter: brightness(200%);
   
 }
 
 #freeWatchBtn{
   background-color: red;
   color: white;
-  width: 50vw;
-  height: 8vh;
+  width: 40vw;
+  height: 8.5vh;
   font-size: xx-large;
-  font-weight:lighter;
+  font-weight: normal;
   margin-top: 1rem;
   border-color: red;
   border-style: solid;
+}
+
+
+
+@media (max-width:1080px){
+  .user_container{
+    width: 82vw;
+    height: 73vh;
+  }
+  
+  .user_input, .user_btn{
+    width: 50vw;
+    height: 2.3rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  
+  }
+  .sign_cont{
+    display: flex;
+    flex-direction: column;
+    gap : 2rem;
+    align-items: center;
+  }
+  .thankyou{
+    font-size: small;
+  }
+  #freeWatchBtn{
+    font-size: medium;
+    font-weight: bolder;
+    height: 8vh;
+    width: 65vw;
+  }
+
+  #notSigned{
+    /* background-repeat: repeat-y; */
+    background-size: cover;
+  }
+
 }
