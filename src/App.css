@@ -251,22 +251,22 @@ span{
   align-items: center;
   background-color: rgba(128, 128, 128, 0.553)
 }
-
+/* image("F:\webpage project\netflix-clone\netflix-clone\src\image\netflix.jpg"); */
 
 /* not signed */
 #notSigned{
-  background-image: url("F:\webpage project\netflix-clone\netflix-clone\src\image\netflix.jpg");
+  background-image:url("https://cdn.arstechnica.net/wp-content/uploads/2022/07/netflix.jpg");
   color: #fff;
   width: 100vw;
   height:100vh;
   /* position: relative; */
   background-size: cover;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   /* filter:brightness(80%); */
-  animation: zoom-in-zoom-out 10s linear infinite;
+  animation: zoom-in-zoom-out 8s linear infinite;
   /* transition: transform 0.5s linear; */
 }
 @keyframes zoom-in-zoom-out {
@@ -274,7 +274,7 @@ span{
     transform: scale(1, 1);
   }
   50% {
-    transform: scale(1.05, 1.05);
+    transform: scale(1.04, 1.04);
   }
   100% {
     transform: scale(1, 1);
@@ -287,6 +287,15 @@ span{
   background-color: #0000006f;
 }
 
+.noSignData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+  background-color: #0000006b;
+}
 .freeWatchContainer{
   width: 70vw;
   display: flex;
@@ -294,7 +303,7 @@ span{
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  filter: brightness(200%);
+  /* background-color: #000; */
   
 }
 
