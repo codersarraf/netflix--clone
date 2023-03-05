@@ -1,3 +1,6 @@
+/* @import url('https://fonts.cdnfonts.com/css/netflix-font'); */
+
+
 *{
   margin: 0;
 }
@@ -266,7 +269,7 @@ span{
   align-items: center;
   justify-content: center; */
   /* filter:brightness(80%); */
-  animation: zoom-in-zoom-out 14 linear infinite;
+  animation: zoom-in-zoom-out 10s linear infinite;
   /* transition: transform 0.5s linear; */
 }
 @keyframes zoom-in-zoom-out {

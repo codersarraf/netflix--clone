@@ -5,7 +5,7 @@ function Notsigned({setModal}) {
   return (
     <div id="notSigned">
       <div class="noSignData">
-        <img src={netflix_Name} className='name_logo_big' />
+        <img src={netflix_Name} className='name_logo_big' alt='logo' />
         <div class="freeWatchContainer">
           <h1>See what's next</h1>  
           <h3>WATCH ANYTIME ANYWHERE</h3>

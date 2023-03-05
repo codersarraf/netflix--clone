@@ -33,7 +33,7 @@ console.log(user);
     {signup ? <Signup setSignup={setSignup} setModal={setModal}/> :
     <div className='user'>
       <div className='user_container'>
-          <img src={netflix_Name} className='name_logo' />
+          <img src={netflix_Name} className='name_logo' alt='logo' />
           <div ><input className='user_input' name='email' type={'text'} onChange={(e)=>setLogin({...login,[e.target.name]:e.target.value})} placeholder="Email or phone number"/></div>
           <div><input className='user_input' name='pass' type={'password'} onChange={(e)=>setLogin({...login,[e.target.name]:e.target.value})} placeholder="Password"/></div>
           <button className='user_btn' onClick={userLogin} type={'submit'} >Sign In</button>
