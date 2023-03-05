@@ -1,7 +1,7 @@
 import React from 'react'
 import netflix_Name from "./image/netflix_Name.jpg"
 
-function Notsigned({setModal}) {
+function Notsigned({modal,setModal}) {
   return (
     <div id="notSigned">
       <div class="noSignData">

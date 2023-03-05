@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import User from './User';
 
-function Navbar() {
+function Navbar({modal,setModal}) {
 
     const[show,setShow] = useState(false);
-    const[modal, setModal]=useState(false);
+    // const[modal, setModal]=useState(false);
+
+   
 
     
 

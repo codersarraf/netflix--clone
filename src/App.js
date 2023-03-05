@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import './App.css';
 import Row from "./Row";
 import requests from "./requests";
@@ -10,12 +10,13 @@ import Notsigned from "./Notsigned";
 
 
 function App() {
+  const[modal, setModal]=useState(false);
   let userDetail = JSON.parse(localStorage.getItem("userDetails"))
   
   return (
     <div className="App">
-      <Navbar />
-      {userDetail ==null  ? <Notsigned /> :
+      <Navbar modal={modal} setModal ={setModal} />
+      {userDetail ==null  ? <Notsigned modal={modal} setModal ={setModal} /> :
       <>
       <Banner/>
       <Row title = "Netflix Original" fetchUrl={requests.fetchNetflixOriginals} isLarger />
