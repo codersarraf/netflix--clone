@@ -83,9 +83,9 @@ let name = e.name;
         ))}
       </div>
 
-      {trailerUrl && <iframe title="youtube-video" width="420" height="315"
-        src={trailerUrl}>
-</iframe>}
+        {trailerUrl && <iframe title="youtube-video" width="420" height="315"
+          src={trailerUrl}>
+        </iframe>}
     </div>
   )
 }
