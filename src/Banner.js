@@ -28,10 +28,10 @@ function Banner() {
         <div className='banner_data'>
             <h1 className='banner_title'>{movie?.title || movie?.name || movie?.original_name}</h1>
 
-            <div className='buttons'>
+            {/* <div className='buttons'>
                 <button className='button' >Play</button>
                 <button className='button' >My List</button>
-            </div>
+            </div> */}
 
             <h1 className='banner_desc'>
                 {truncate(movie?.overview,150)}
