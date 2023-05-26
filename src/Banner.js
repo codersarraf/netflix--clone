@@ -34,7 +34,7 @@ function Banner() {
             </div> */}
 
             <h1 className='banner_desc'>
-                {truncate(movie?.overview,150)}
+                {truncate(movie?.overview,160)}
             </h1>
         </div>
         <div className="banner_fade" />
