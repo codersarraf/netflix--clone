@@ -358,6 +358,11 @@ span{
     background-size: cover;
   }
 
+  #trailer-box{
+    width: 90vw;
+    height: 30vh;
+  }
+
 }
 
 
