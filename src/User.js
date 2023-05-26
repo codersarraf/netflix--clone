@@ -19,11 +19,13 @@ const userLogin =()=>{
       userDetail[i].isLogin = true;
       return elem;
     }
+    
   })
-console.log(user);
+
   if(user.length ===1){
     localStorage.setItem("userDetails", JSON.stringify(userDetail));
     alert("Login Successfully....")
+    setModal(false);
   }else{
     alert("Invalid user details....");
   }
